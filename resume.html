@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kshitij Wankar - Resume</title>
+<style>
+  /* ---------- Page setup: A4, tuned so the resume fills exactly one page ---------- */
+  @page { size: A4; margin: 8mm 11mm; }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.27;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Screen preview only — never printed ---------- */
+  @media screen {
+    body {
+      max-width: 210mm;
+      margin: 24px auto;
+      padding: 9mm 12mm;
+      background: #fff;
+      box-shadow: 0 2px 14px rgba(0,0,0,.12);
+    }
+  }
+
+  /* ---------- Header ---------- */
+  h1 {
+    font-size: 20pt;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0 0 3px;
+    font-weight: 700;
+  }
+
+  .tagline {
+    text-align: center;
+    font-size: 9pt;
+    color: #555;
+    margin: 0 0 4px;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 9pt;
+    color: #333;
+    margin: 0;
+  }
+  .contact a { color: #1a4f8a; text-decoration: none; }
+  .contact .sep {
+    color: #b0b0b0;
+    padding: 0 6px;
+    user-select: none;
+  }
+
+  /* ---------- Section headings ---------- */
+  h2 {
+    font-size: 10.2pt;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #1a4f8a;
+    border-bottom: 0.9px solid #1a4f8a;
+    margin: 9px 0 5px;
+    padding-bottom: 2px;
+    font-weight: 700;
+  }
+  h2:first-of-type { margin-top: 8px; }
+
+  /* ---------- Text ---------- */
+  p { margin: 0; }
+
+  ul {
+    margin: 4px 0 0;
+    padding-left: 16px;
+  }
+  li { margin-bottom: 2.5px; }
+
+  b, strong { font-weight: 700; }
+  .hl { color: #1a4f8a; font-weight: 700; }
+
+  /* ---------- Skills ---------- */
+  .skills { margin-top: 2px; }
+  .skills p { margin: 0 0 2.5px; }
+
+  /* ---------- Projects ---------- */
+  .project { margin-top: 7px; }
+  .project:first-of-type { margin-top: 4px; }
+
+  /* Flex row keeps the project name on the left and its link hard-right,
+     wrapping the link onto its own line instead of colliding with the title. */
+  .project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px 14px;
+    flex-wrap: wrap;
+  }
+  .project-title { font-weight: 700; }
+  .project-stack {
+    color: #444;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .project-link {
+    font-size: 8.8pt;
+    color: #1a4f8a;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* ---------- Education ---------- */
+  .edu { margin-top: 5px; }
+  .edu:first-of-type { margin-top: 2px; }
+  .edu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px 14px;
+  }
+  .edu-degree { font-weight: 700; }
+  .edu-date {
+    color: #444;
+    white-space: nowrap;   /* keeps "May 2021 - Jul 2022" from breaking mid-range */
+  }
+  .edu-meta { color: #444; margin-top: 0.5px; }
+
+  /* ---------- Additional information ---------- */
+  .additional ul { margin-top: 3px; }
+</style>
+</head>
+<body>
+
+<h1>KSHITIJ WANKAR</h1>
+<p class="tagline">Python &amp; AI Backend Engineer &mdash; Retrieval Systems, LLM Agents &amp; MCP Tooling</p>
+<p class="contact">
+  <a href="mailto:kishor.kshitij@nmiet.edu.in">kishor.kshitij@nmiet.edu.in</a><span class="sep">|</span>
+  <a href="https://github.com/Kshitij1ghk">github.com/Kshitij1ghk</a><span class="sep">|</span>
+  B.E. Information Technology, 2026 &mdash; PCET-NMIT, Pune
+</p>
+
+<h2>Summary</h2>
+<p>
+  Final-year Information Technology engineering student with a strong foundation in Python, C#/.NET,
+  OOP, backend development, databases, and data structures &amp; algorithms. Hands-on experience
+  building applied GenAI projects involving retrieval-augmented generation, vector search, LLM
+  tool-calling, and Model Context Protocol (MCP). Comfortable building and shipping end-to-end
+  software using REST APIs, FastAPI, and modern AI development workflows.
+</p>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><span class="hl">Languages:</span> Python (primary &mdash; OOP, asyncio, type hints), C#, JavaScript (ES6+), SQL, C/C++ basics</p>
+  <p><span class="hl">AI / GenAI:</span> Retrieval-augmented generation (RAG), embeddings &amp; vector search, LLM APIs, prompt engineering, AI agents, tool-calling, Model Context Protocol (MCP)</p>
+  <p><span class="hl">Backend &amp; Data:</span> FastAPI, Flask, ASP.NET Core MVC, Entity Framework Core, RESTful APIs, async programming, Pydantic, MySQL, relational schema design, Qdrant (vector DB, HNSW)</p>
+  <p><span class="hl">Developer Tools:</span> Git/GitHub, GitHub REST &amp; GraphQL APIs, pytest, Visual Studio, JupyterLab, Vercel</p>
+  <p><span class="hl">Frontend:</span> HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS</p>
+</div>
+
+<h2>Projects</h2>
+
+<div class="project">
+  <div class="project-head">
+    <span class="project-title">Business RAG Assistant <span class="project-stack">&mdash; Python, FastAPI, Qdrant, FastEmbed, Gemini</span></span>
+    <a class="project-link" href="https://github.com/Kshitij1ghk/business-rag-assistant">github.com/Kshitij1ghk/business-rag-assistant</a>
+  </div>
+  <ul>
+    <li>
+      Built an end-to-end retrieval-augmented QA system over internal policy documents: chunking
+      &rarr; 384-dim BAAI/bge-small embeddings via local ONNX inference (no external embedding
+      API, so no per-query cost) &rarr; Qdrant storage with HNSW and cosine similarity &rarr; grounded
+      answer synthesis with source citations, similarity scores and confidence bars in the UI.
+    </li>
+    <li>
+      Hardened against the failure modes common to RAG systems: a 0.40 similarity floor returns a
+      deterministic refusal <i>without</i> calling the LLM when nothing relevant is retrieved, and
+      retrieved chunks are passed as untrusted data rather than instructions to resist prompt
+      injection. 16 passing pytest tests plus a diagnostic retrieval script for tuning the threshold.
+    </li>
+  </ul>
+</div>
+
+<div class="project">
+  <div class="project-head">
+    <span class="project-title">MCP-Powered Developer Assistant <span class="project-stack">&mdash; Python, MCP, GitHub API, AST, pytest</span></span>
+    <a class="project-link" href="https://github.com/Kshitij1ghk/MCP-Powered-Developer-Assistant">github.com/Kshitij1ghk/MCP-Powered-Developer-Assistant</a>
+  </div>
+  <ul>
+    <li>
+      Designed an MCP client/orchestrator that connects separate code, GitHub and test MCP servers
+      into multi-step agent workflows &mdash; locate a bug, inspect symbols, triage the matching
+      issue, generate a patch, and validate it &mdash; with interactive [Y/N] approval gates before
+      any change is written.
+    </li>
+    <li>
+      Implemented codebase access over Python AST parsing (classes, functions, arguments,
+      docstrings, line ranges) confined to an ALLOWED_DIR jail with path-traversal prevention, plus
+      diff-based patch generation and sandboxed pytest execution with timeouts; 16 unit and
+      integration tests cover the code, patching, GitHub and agent-flow layers.
+    </li>
+  </ul>
+</div>
+
+<div class="project">
+  <div class="project-head">
+    <span class="project-title">Asterion Astrologer <span class="project-stack">&mdash; Python, Flask, Groq LLM API, Whisper, Vercel</span></span>
+    <a class="project-link" href="https://github.com/Kshitij1ghk/Asterion-Astrologer">github.com/Kshitij1ghk/Asterion-Astrologer</a>
+  </div>
+  <ul>
+    <li>
+      Shipped a full-stack AI astrology web app &mdash; Flask backend, responsive frontend &mdash;
+      generating Vedic and KP birth charts with planetary positions computed to four decimal places
+      via custom Swiss Ephemeris algorithms, plus Vimshottari Dasha periods, Star Lords / Sub Lords
+      analysis and daily horoscopes.
+    </li>
+    <li>
+      Added a conversational assistant using Groq-hosted LLMs (Llama 3.3 / GPT-OSS) with conversation
+      memory and quick-action prompts, plus Whisper speech-to-text / text-to-speech for Hinglish and
+      English voice input; birthplace search via OpenStreetMap, deployed on Vercel
+      (<a class="project-link" href="https://asterion-gamma.vercel.app">asterion-gamma.vercel.app</a>).
+    </li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+
+<div class="edu">
+  <div class="edu-head">
+    <span class="edu-degree">Bachelor of Engineering, Information Technology</span>
+    <span class="edu-date">Aug 2023 &ndash; 2026</span>
+  </div>
+  <div class="edu-meta">PCET-Nutan Maharashtra Institute of Engineering and Technology, Pune &nbsp;|&nbsp; CGPA 8.34/10</div>
+</div>
+
+<div class="edu">
+  <div class="edu-head">
+    <span class="edu-degree">Higher Secondary (Class 12), Science</span>
+    <span class="edu-date">May 2021 &ndash; Jul 2022</span>
+  </div>
+  <div class="edu-meta">Shree Mahrishi Vidya Mandir, Chandrapur &nbsp;|&nbsp; 75.2%</div>
+</div>
+
+<div class="edu">
+  <div class="edu-head">
+    <span class="edu-degree">Secondary (Class 10)</span>
+    <span class="edu-date">May 2019 &ndash; Jul 2020</span>
+  </div>
+  <div class="edu-meta">St. Michael's English School, Chandrapur, Maharashtra &nbsp;|&nbsp; 93.2%</div>
+</div>
+
+<h2>Additional Information</h2>
+<div class="additional">
+  <ul>
+    <li><span class="hl">Leadership:</span> Technical Coordinator, Student Association of Information Technology &mdash; runs technical events and code sessions for the cohort.</li>
+    <li><span class="hl">Certifications:</span> HTML, CSS and JavaScript for Web Developers &mdash; Johns Hopkins University (Coursera); Python Data Structures &mdash; University of Michigan (Coursera).</li>
+    <li><span class="hl">Interests:</span> Reading fictional and philosophical genre.</li>
+  </ul>
+</div>
+
+</body>
+</html>
